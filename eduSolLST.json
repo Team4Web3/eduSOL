@@ -1,5 +1,7 @@
 {
     "name": "Education Staked SOL",
     "symbol": "eduSOL",
-    "uri": "https://meusite.com/logo.png"
-}
+    "description": "Liquid staking token for Education on Solana",
+    "image": "https://example.com/eduSOL.png",
+    "website": "https://education-sol.com"
+  }
