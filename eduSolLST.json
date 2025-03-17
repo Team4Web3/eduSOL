@@ -2,6 +2,6 @@
     "name": "Education Staked SOL",
     "symbol": "eduSOL",
     "description": "Liquid staking token for Education on Solana",
-    "image": "https://example.com/eduSOL.png",
+    "image": "https://raw.githubusercontent.com/Team4Web3/eduSOL/refs/heads/main/eduSOL.webp",
     "website": "https://education-sol.com"
   }
