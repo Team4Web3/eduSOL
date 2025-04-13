@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="bg-[#1A1A2E] text-white" lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>eduPool — LST Educacional na Solana</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .logo-container {
+      position: relative;
+      width: 150px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    @media (max-width: 640px) {
+      .logo-container {
+        width: 120px;
+        height: 48px;
+      }
+    }
+  </style>
+</head>
+
+<body class="font-sans">
+  <!-- Navbar com logo -->
+  <nav class="bg-[#16213E] px-6 py-4 flex justify-between items-center shadow-md">
+    <div class="flex items-center gap-3">
+      <button aria-label="Abrir menu" class="md:hidden text-white focus:outline-none" id="menu-toggle">☰</button>
+      <!-- Logo -->
+      <div class="logo-container">
+        <img src="eduPool.jpg" alt="eduPool Logo" class="h-auto w-auto" />
+      </div>
+    </div>
+    <div class="hidden md:flex md:flex-row gap-6 text-sm" id="mobile-menu">
+      <ul class="flex flex-wrap justify-center gap-4">
+        <li><a aria-label="Ir para seção Sobre" class="hover:text-[#00FFA3] transition duration-300"
+            href="#sobre">Sobre</a></li>
+        <li><a aria-label="Ir para seção Como funciona" class="hover:text-[#00FFA3] transition duration-300"
+            href="#como-funciona">Como Funciona</a></li>
+        <li><a aria-label="Ir para seção Roadmap" class="hover:text-[#00FFA3] transition duration-300"
+            href="#roadmap">Roadmap</a></li>
+        <li><a aria-label="Ir para seção Estrategia" class="hover:text-[#00FFA3] transition duration-300"
+            href="#estrategia">Estratégia</a></li>
+        <li><a aria-label="Ir para seção Comunidade" class="hover:text-[#00FFA3] transition duration-300"
+            href="#comunidade">Comunidade</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Hero -->
+  <section class="text-center py-20 px-4 sm:px-6">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Transformando Staking em Educação Web3</h2>
+    <p class="text-base sm:text-lg text-gray-300 max-w-xl mx-auto mb-8">
+      Com o eduSOL, seu stake tem poder duplo: gera rendimentos enquanto investe no futuro do Brasil.
+    </p>
+    <p class="text-base sm:text-lg text-gray-300 max-w-xl mx-auto mb-8">
+      30% do nosso lucro é direcionado para educação gratuita em blockchain para pessoas com baixo acesso à educação.
+    </p>
+    <a aria-label="Stake seu SOL em breve"
+      class="bg-[#0F3460] hover:bg-[#1c4d8c] px-6 py-3 rounded-full text-white transition duration-300 shadow-md"
+      href="#stake">
+      Stake seu SOL *
+    </a>
+    <label class="block text-sm text-gray-400 mt-4">
+      * em breve
+    </label>
+  </section>
+  <!-- Seção explicativa -->
+  <section class="bg-[#16213E] py-16 px-4 sm:px-6" id="como-funciona">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-6">Como funciona?</h3>
+      <p class="text-gray-300">
+        O eduSOL é mais que um token LST - é um movimento de transformação social. Ao fazer stake, você:
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+        <ul class="list-disc list-inside space-y-2 text-left mx-auto">
+          <li class="text-gray-300"><span class="text-white font-medium">Recebe recompensas competitivas de
+              staking.</span></li>
+          <li class="text-gray-300"><span class="text-white font-medium">Participa no eduDAO.</span></li>
+          <li class="text-gray-300"><span class="text-white font-medium">Contribui com Impacto social direto.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Roadmap -->
+  <section class="py-16 px-4 sm:px-6" id="roadmap">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-semibold text-center mb-10">📈 Roadmap</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="bg-[#EAEAEA] text-[#1A1A2E] p-6 rounded-lg shadow-md">
+          <h4 class="text-xl font-bold mb-4">Fase 1: Fundação</h4>
+          <ul class="list-disc list-inside space-y-2 text-left">
+            <li><span class="font-medium">Distribuição inicial do eduDAO.</span></li>
+            <li><span class="font-medium">Estabelecimento de parcerias educacionais.</span></li>
+            <li><span class="font-medium">Lançamento da stake pool.</span></li>
+          </ul>
+        </div>
+        <div class="bg-[#EAEAEA] text-[#1A1A2E] p-6 rounded-lg shadow-md">
+          <h4 class="text-xl font-bold mb-4">Fase 2: Crescimento</h4>
+          <ul class="list-disc list-inside space-y-2 text-left">
+            <li><span class="font-medium">Implementação do mecanismo de queima do token.</span></li>
+            <li><span class="font-medium">Início dos programas educacionais.</span></li>
+          </ul>
+        </div>
+        <div class="bg-[#EAEAEA] text-[#1A1A2E] p-6 rounded-lg shadow-md">
+          <h4 class="text-xl font-bold mb-4">Fase 3: Consolidação</h4>
+          <ul class="list-disc list-inside space-y-2 text-left">
+            <li><span class="font-medium">Governança completa via eduDAO.</span></li>
+            <li><span class="font-medium">Expansão das iniciativas educacionais.</span></li>
+            <li><span class="font-medium">Ampliação de parcerias estratégicas.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Seção de estratégia -->
+  <section class="bg-[#16213E] py-16 px-4 sm:px-6" id="estrategia">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold text-center text-white mb-10">🎓 Estratégia de Delegação eduSOL</h3>
+      <div class="space-y-10">
+        <div>
+          <h4 class="text-xl text-white font-semibold mb-2">🌎 Foco em criação de comunidade e descentralização:</h4>
+          <p class="text-gray-300">
+            Nosso foco inicial é apoiar <strong class="text-white">validadores localizados na América Latina</strong>
+            que tenham um propósito de disseminar a Solana em seus países e atuem diretamente em criação e
+            desenvolvimento de comunidade. Ao priorizar operadores da região, queremos fortalecer o ecossistema
+            blockchain local, ampliar a descentralização e impulsionar oportunidades em mercados historicamente
+            subrepresentados.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-xl text-white font-semibold mb-2">📉 Comissão Máxima: 5%</h4>
+          <p class="text-gray-300">
+            Selecionamos apenas validadores com <strong class="text-white">comissão de staking igual ou inferior a
+              5%</strong>, garantindo recompensas justas aos delegadores e apoiando estruturas sustentáveis.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-xl text-white font-semibold mb-2">⚡ Comissão MEV (Jito) Máxima: 10%</h4>
+          <p class="text-gray-300">
+            Validadores que operam com o cliente Jito devem manter a <strong class="text-white">comissão MEV abaixo de
+              10%</strong>,
+            promovendo retornos justos e evitando práticas abusivas.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-xl text-white font-semibold mb-2">🏆 Seleção com Base em Performance</h4>
+          <ul class="list-disc list-inside mt-2 space-y-2 text-gray-300">
+            <li><span class="text-white font-medium">Pontuação de Confiabilidade</span>: estabilidade e excelência
+              operacional.
+            </li>
+            <li><span class="text-white font-medium">Taxa de Skip</span>: baixa taxa de blocos perdidos.</li>
+            <li><span class="text-white font-medium">Presença de Marca</span>: identidade visual e site informativo.
+            </li>
+            <li><span class="text-white font-medium">Integridade On-Chain</span>: sem histórico de comportamento
+              malicioso.</li>
+            <li><span class="text-white font-medium">Padrões de Segurança</span>: monitoramento via <a
+                class="text-[#00FFA3] underline hover:text-white transition duration-300" href="https://validators.app"
+                target="_blank" rel="noopener noreferrer">validators.app</a>.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xl text-white font-semibold mb-2">🔁 Estratégia de Rebalanceamento</h4>
+          <ul class="list-disc list-inside mt-2 space-y-2 text-gray-300">
+            <li><span class="text-white font-medium">APY alto</span>: validadores com maior retorno são favorecidos
+              (fator 5.0).
+            </li>
+            <li><span class="text-white font-medium">Tolerância ao Skip Rate</span>: até 10%.</li>
+            <li><span class="text-white font-medium">Rebalanceamento máximo</span>: 5% do total do stake por época.</li>
+            <li><em class="text-white">Distribuição geográfica</em>: por país e cidade (em planejamento).</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xl text-white font-semibold mb-2">🛠 Alinhamento com a Versão da Rede</h4>
+          <p class="text-gray-300">
+            Todos os validadores devem seguir a <strong class="text-white">versão recomendada do cluster
+              Solana</strong>,
+            garantindo estabilidade e segurança na rede.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-xl text-white font-semibold mb-2">🌍 Visão de Futuro</h4>
+          <p class="text-gray-300">
+            Buscamos construir uma estratégia de delegação <strong class="text-white">global, educacional e
+              inclusiva</strong>,
+            com foco em mercados emergentes, sustentabilidade e parcerias alinhadas aos nossos valores.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Seção comunidade-->
+  <section class="bg-[#1A1A2E] py-16 px-4 sm:px-6 text-gray-300" id="comunidade">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold text-white mb-6">🌟 Comunidade</h3>
+      <p class="text-gray-300 mb-8">
+        Junte-se a nós na comunidade Solana, onde a educação e a tecnologia se encontram. Junte-se a nós e impulsione
+        iniciativas educacionais no Solana.
+      </p>
+
+      <!-- Redes sociais com ícones -->
+      <div class="flex flex-wrap justify-center gap-8 mt-6">
+        <a href="https://x.com/eduPool_br" target="_blank" rel="noopener noreferrer"
+          class="flex flex-col items-center group">
+          <div
+            class="w-12 h-12 bg-white text-black rounded-full flex items-center justify-center mb-2 group-hover:bg-[#00FFA3] transition-colors duration-300">
+            <i class="fab fa-twitter text-xl"></i>
+          </div>
+          <span class="text-sm group-hover:text-[#00FFA3] transition-colors duration-300">X (Twitter)</span>
+        </a>
+
+        <a href="https://www.instagram.com/edupool_br/" target="_blank" rel="noopener noreferrer"
+          class="flex flex-col items-center group">
+          <div
+            class="w-12 h-12 bg-white text-black rounded-full flex items-center justify-center mb-2 group-hover:bg-[#00FFA3] transition-colors duration-300">
+            <i class="fab fa-instagram text-xl"></i>
+          </div>
+          <span class="text-sm group-hover:text-[#00FFA3] transition-colors duration-300">Instagram</span>
+        </a>
+
+        <a href="https://www.youtube.com/@MarsValidator" target="_blank" rel="noopener noreferrer"
+          class="flex flex-col items-center group">
+          <div
+            class="w-12 h-12 bg-white text-black rounded-full flex items-center justify-center mb-2 group-hover:bg-[#00FFA3] transition-colors duration-300">
+            <i class="fab fa-youtube text-xl"></i>
+          </div>
+          <span class="text-sm group-hover:text-[#00FFA3] transition-colors duration-300">YouTube</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-[#16213E] text-center text-sm text-gray-400 py-6">
+    Feito com 💙 para a comunidade Solana | eduSOL © 2025
+  </footer>
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>
